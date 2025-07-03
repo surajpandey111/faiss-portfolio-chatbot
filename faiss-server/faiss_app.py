@@ -3,6 +3,7 @@ from flask_cors import CORS
 from langchain_community.embeddings import HuggingFaceEmbeddings
 from langchain_community.vectorstores import FAISS
 from langchain.text_splitter import RecursiveCharacterTextSplitter
+from langchain_huggingface import HuggingFaceEmbeddings
 import google.generativeai as genai
 import os
 from dotenv import load_dotenv
@@ -44,4 +45,4 @@ def search():
     return jsonify({"answer": answer.text})
 
 if __name__ == "__main__":
-    app.run(port=8000)
+    app.run(host="0.0.0.0", port=int(os.environ.get("PORT", 8000)))
