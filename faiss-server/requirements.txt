@@ -1,7 +1,8 @@
 flask
-faiss-cpu
+flask-cors
 langchain
 langchain-community
 sentence-transformers
-flask-cors
+faiss-cpu
+google-generativeai
 python-dotenv
