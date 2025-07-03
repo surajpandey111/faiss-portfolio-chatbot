@@ -1,0 +1,100 @@
+Hi, I am Suraj Kumar Pandey, a polymathic AI/ML and full-stack developer. I am the founder of Gyanm: The DeepAI, India's first AI productivity platform built for text, code, and image generation to boost daily work. Try it at https://researchai-qpt.onrender.com/. I am pursuing B.Tech in Information Technology at Government Engineering College Azamgarh, and BS Data Science at IIT Madras.
+
+My skills include:
+- Artificial Intelligence
+- Machine Learning
+- Deep Learning
+- Python
+- JavaScript
+- React
+- Django
+- Streamlit
+- TensorFlow
+- PyTorch
+- FAISS
+- LangChain
+- Gemini API
+- MySQL
+- MongoDB
+- Flask
+- C++
+- C
+- Both Frontend(React.js) + Backend(Node.js) all--> Full stack developer
+- Data Structures & Algorithms (DSA)
+- cloud platforms like AWS and Render
+
+My college positions and awards:
+- Technical General Secretary of T&P at GEC Azamgarh
+- District Magistrate Officials Award
+- Google AI Gatherings Hackathon invitation, 2024
+- IIT Bombay Campus Ambassador, 2022–2023
+- International Entrepreneurship Cell Certificate 2023–2025
+- IBM Hackathon participation with Government 2025
+- GSI Mineral Targeting Hackathon 2025
+- TechFest Medalist 2022-2023 (IIT Bombay)
+- IT-Tech Head Innovation Dept 2024-2025 (GEC Azamgarh)
+
+Educational History
+B.Tech in Information Technology
+Government Engineering College, Azamgarh
+2022 – Present (3rd Year)
+• Admitted through JEE Main All India Quota
+• JEE Main Percentile: 90.89, 2022
+• JEE Advanced Qualified, 2022
+• Current CGPA: 7.5
+BS Degree in Data Science and Applications
+Indian Institute of Technology (IIT) Madras
+• Jee Entry 2022
+worldforensic@gmail.com
+CA
+(IIT) Bombay
+(Tech Field)TechFest Medalist
+ 2022 – 2023
++91 7488723028
+Senior Secondary (Class 12)
+JPS Motihari, CBSE
+Year: 2021 | Percentage: 76%
+Secondary (Class 10)
+BSPS, Muzaffarpur, CBSE
+Year: 2019 | Percentage: 80%
+
+My projects include:
+- Mineral Targeting 2025: AI-based mineral exploration with seven ensemble ML models (STGNN, CNN, QIENN, Linear Regression, Tuned XGBoost, Stacking Ensemble, Weighted Ensemble) to identify critical mineral zones, built for IndiaAI Hackathon. Best model Tuned Stacking Ensemble with MSE 7.8744, 501 high-potential zones. [YouTube](https://youtu.be/AAd4PiICbAI) | [Flask](https://mineral-targeting-2025.onrender.com/) | [React](https://mineral-targeting-static.onrender.com/) | [GitHub](https://github.com/surajpandey111/mineral-targeting-2025)
+- SHL Recommendation Engine: Built using RAG architecture with LangChain + Gemini, to recommend SHL assessments based on user queries. Hosted on Streamlit.
+- AI-powered PDF to Excel parser: Packaged as .exe (51 MB for text, 201 MB for table extraction) and hosted on Streamlit for semantic search and table extraction. [Try it](https://gyanmaipdf-to-excel-super-smart.streamlit.app/)
+- Alexander AI Assistant: Django-based voice assistant for coding help, real-time queries, and task automation. [YouTube](https://voutu.be/HCchAhpkELo) | [YouTube](https://voutu.be/2Tj5H82E7n8) | [GitHub](https://github.com/suraipandey111/alaxander-ai-voice-assiatsimt/tree/master)
+- Real-Time Object Detection: YOLOv3 + OpenCV app with non-max suppression for webcam detection. [YouTube](https://voutu.be/iovlhRblovk)
+- Natural Disaster Predictor: Tkinter GUI for earthquake forecasting with weather APIs and Random Forest. [YouTube](https://voutu.be/_qnomzwuHgg)
+- Diabetes Prediction System: Tkinter GUI with Random Forest for diabetes risk classification. [YouTube](https://voutu.be/F12Mptzyw7o)
+- College Library Website: A static HTML/CSS website for college use.
+- IT Department Workshop Website: Static website for IT department events and updates.
+- TechXplore 2024 Hackathon: Organized and developed a frontend-focused hackathon at GEC Azamgarh. [Link](https://techxplore.tiiny.site/)
+- Google AI Productivity competition: Submitted a generative AI system for everyday productivity. [Link](https://ai.google.dev/competition/projects/ai-for-everyday-work)
+- Personalized Health Coach: ML-powered diet, sleep, and mental health recommender (in progress).
+- Image-to-Image House Preview: GAN-powered house paint preview app (in progress).
+- Quantum-enhanced ML Framework: Exploring quantum + classical ML for NP-hard acceleration (research).
+- Neuro-symbolic AI: Combining symbolic reasoning with neural models (research).
+- Federated Learning Platform: Privacy-preserving collaborative ML across multiple organizations (research).
+- AI Meme Generator: Text-to-image model to generate memes (in progress).
+- AI Voice & Personality Cloner: Digital twin voice & personality clone (in progress).
+- AI Crop Disease Detector: ML-based phone app to detect crop diseases (in progress).
+- AI-Powered Government Schemes Chatbot: Streamlit-based chatbot using LLMs and RAG for personalized government scheme recommendations and application guidance. [Live Demo](https://aipowered-govt-schemes.streamlit.app/) | [GitHub](https://github.com/surajpandey111/AI_Powered_Schemes)
+- REC Azamgarh Chatbot: Streamlit-based chatbot using SLMs, HuggingFace, and FAISS for college query responses. [Try it](https://rec-azamgarh-chatbot.streamlit.app/)
+- AI-Powered Resume Builder: Streamlit app generating ATS-friendly resumes with AI.
+- AI-Powered Job Portal: Streamlit app matching candidates.
+
+My contact details are:
+- Email: worldforensic@gmail.com
+- Phone: +91 7488723028
+- LinkedIn: https://www.linkedin.com/in/suraj-kumar-pandey
+- Instagram: https://www.instagram.com/suraipandey6758/
+- GitHub: https://github.com/suraipandey111
+- YouTube links:
+  - Gyanm: https://youtu.be/2VCIfdPtp6w
+  - Mineral Targeting 2025: https://youtu.be/AAd4PiICbAI
+  - Alexander AI: https://voutu.be/HCchAhpkELo
+  - YOLO Object Detection: https://voutu.be/iovlhRblovk
+  - Natural Disaster Predictor: https://voutu.be/_qnomzwuHgg
+  - Diabetes Prediction System: https://voutu.be/F12Mptzyw7o
+
+My mission is to create ethical, production-ready, and impactful AI systems that transform daily work, society, and future research with the power of open collaboration.
