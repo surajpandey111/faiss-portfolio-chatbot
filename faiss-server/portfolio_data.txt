@@ -1,56 +1,40 @@
-Hi, I am Suraj Kumar Pandey  
-- B.Tech IT (GEC Azamgarh), BS Data Science (IIT Madras)  
-- Founder of Gyanm: India's first AI productivity platform  
-  👉 https://researchai-qpt.onrender.com
+Hi, I’m Suraj Kumar Pandey
+- Founder of Gyanm: The DeepAI, India’s first AI productivity platform
+  https://researchai-qpt.onrender.com
+- B.Tech IT (GEC Azamgarh), BS Data Science (IIT Madras)
 
-Key Skills  
-- AI, ML, DL, Python, TensorFlow, PyTorch, LangChain, Gemini API  
-- React, Django, Flask, Node, Streamlit, JavaScript, C++, C  
-- FAISS, MySQL, MongoDB, AWS, Render  
-- DSA + Full Stack (Frontend + Backend)
+Key Skills
+- AI, ML, DL, Python, TensorFlow, PyTorch, LangChain, Gemini API
+- React, Django, Node, Flask, Streamlit, JavaScript, C++, C
+- FAISS, MySQL, MongoDB, AWS, Render, DSA
+- Full Stack: Frontend + Backend
 
-Positions & Awards  
-- Tech Gen Sec T&P, GEC Azamgarh  
-- IIT Bombay TechFest Medalist  
-- District Magistrate Officials Award  
-- Google AI Hackathon invite 2024  
-- IIT Bombay Campus Ambassador 2022–23  
-- IIC Cert. 2023–25, IBM + GSI Hackathons 2025  
-- IT Tech Head, Innovation Dept 2024–25
+Positions & Awards
+- Tech Gen Sec T&P, IT Tech Head (GEC Azamgarh)
+- IIT Bombay TechFest Medalist, Campus Ambassador
+- Google AI Hackathon invite, IBM & GSI Hackathons
+- District Magistrate Officials Award
 
-Education  
-- B.Tech IT, GEC Azamgarh (CGPA 7.5, JEE Main 90.89)  
-- BS Data Science, IIT Madras  
-- 12th: 76% (CBSE), 10th: 80% (CBSE)
+Top Projects
+- Mineral Targeting 2025: 7 ensemble ML models → 501 mineral zones
+  Demo: https://mineral-targeting-2025.onrender.com
+  GitHub: https://github.com/surajpandey111/mineral-targeting-2025
+- SHL Recommender: RAG with LangChain + Gemini
+- PDF→Excel Parser: AI semantic + table extraction
+- Alexander: Django voice assistant
+- YOLOv3 Detection: Real-time webcam object detection
+- Gov Schemes Chatbot: AI + RAG personalized scheme guide
+  Demo: https://aipowered-govt-schemes.streamlit.app
+- REC Azamgarh Chatbot: FAISS + Streamlit for college FAQs
+- AI Resume Builder & Job Portal
+- Also working on GANs, Federated ML, Neuro-symbolic AI
 
-Top Projects  
-- Mineral Targeting 2025: 7 ML models, 501 zones  
-  🌐 [YouTube](https://youtu.be/AAd4PiICbAI) | [Flask](https://mineral-targeting-2025.onrender.com) | [React](https://mineral-targeting-static.onrender.com)
-- SHL RAG Gemini recommender (Streamlit)
-- AI PDF→Excel parser [.exe, Streamlit](https://gyanmaipdf-to-excel-super-smart.streamlit.app)
-- Alexander Django voice assistant  
-  📺 [YouTube](https://voutu.be/HCchAhpkELo)
-- YOLOv3 Real-time object detection  
-  📺 [YouTube](https://voutu.be/iovlhRblovk)
-- Natural disaster + Diabetes predictor (Tkinter)
-- Static college websites (library, IT dept events)
-- TechXplore hackathon organizer + site
-- Google AI Productivity submission
-- Health Coach ML recommender (WIP)
-- GAN house preview, voice clone, meme gen (WIP)
-- Quantum+Neuro-symbolic AI, Federated ML (research)
-- Govt Schemes chatbot:  
-  🌐 [Demo](https://aipowered-govt-schemes.streamlit.app)
-- REC Azamgarh chatbot:  
-  🌐 [Demo](https://rec-azamgarh-chatbot.streamlit.app)
-- AI resume & job portal (Streamlit)
+Contact
+Email: worldforensic@gmail.com
+Phone: +91 7488723028
+LinkedIn: https://www.linkedin.com/in/suraj-kumar-pandey
+GitHub: https://github.com/suraipandey111
+Instagram: https://www.instagram.com/suraipandey6758
 
-Contact  
-📧 worldforensic@gmail.com  
-📞 +91 7488723028  
-🔗 [LinkedIn](https://www.linkedin.com/in/suraj-kumar-pandey)  
-🔗 [GitHub](https://github.com/suraipandey111)  
-📸 [Instagram](https://www.instagram.com/suraipandey6758)
-
-Mission  
-- Build ethical, production-ready AI that transforms daily work & research.
+Mission
+- Build ethical, production-grade AI that transforms work & society.
