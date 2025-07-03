@@ -3,3 +3,8 @@ faiss-cpu
 langchain
 langchain-community
 sentence-transformers
+flask-cors
+python-dotenv
+
+
+
