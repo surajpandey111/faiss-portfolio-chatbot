@@ -1,9 +1,6 @@
 flask
 flask-cors
-langchain
-langchain-community
-langchain-huggingface
-sentence-transformers
 faiss-cpu
-google-generativeai
+scikit-learn
 python-dotenv
+google-generativeai

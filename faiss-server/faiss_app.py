@@ -1,13 +1,11 @@
-# Trigger build on 2025-07-06
 from flask import Flask, request, jsonify
 from flask_cors import CORS
-from langchain_community.embeddings import HuggingFaceEmbeddings
-from langchain_community.vectorstores import FAISS
-from langchain.text_splitter import RecursiveCharacterTextSplitter
-from langchain_huggingface import HuggingFaceEmbeddings
+from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.metrics.pairwise import cosine_similarity
 import google.generativeai as genai
-import os
 from dotenv import load_dotenv
+import numpy as np
+import os
 
 load_dotenv()
 api_key = os.getenv("GEMINI_API_KEY")
@@ -16,33 +14,33 @@ if not api_key:
 
 genai.configure(api_key=api_key)
 
+# Load data
+with open("portfolio_data.txt") as f:
+    docs = [line.strip() for line in f if line.strip()]
+
+vectorizer = TfidfVectorizer().fit(docs)
+doc_vectors = vectorizer.transform(docs)
+
 app = Flask(__name__)
 CORS(app)
 
-# Load once
-with open("portfolio_data.txt") as f:
-    data = f.read()
-
-chunks = RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=100).split_text(data)
-
-embeddings = HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")
-db = FAISS.from_texts(chunks, embedding=embeddings)
-
 @app.route("/")
 def home():
-    return "✅ FAISS + Gemini server running. POST to /search"
+    return "✅ FAISS+TFIDF+Gemini server running. POST to /search"
 
 @app.route("/search", methods=["POST"])
 def search():
     q = request.json.get("question")
-    results = db.similarity_search(q, k=4)
-    context = "\n".join([r.page_content for r in results])
-    
+    q_vec = vectorizer.transform([q])
+    sims = cosine_similarity(q_vec, doc_vectors).flatten()
+    top_idx = np.argsort(sims)[-4:][::-1]
+    context = "\n".join([docs[i] for i in top_idx])
+
     prompt = f"Answer the question from this context:\n{context}\n\nQ: {q}"
-    
+
     model = genai.GenerativeModel("gemini-2.0-flash")
     answer = model.generate_content(prompt)
-    
+
     return jsonify({"answer": answer.text})
 
 if __name__ == "__main__":
