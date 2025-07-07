@@ -26,7 +26,7 @@ CORS(app)
 
 @app.route("/")
 def home():
-    return "✅ FAISS+TFIDF+Gemini server running. POST to /search"
+    return "✅ TFIDF+Gemini server running. POST to /search"
 
 @app.route("/search", methods=["POST"])
 def search():
