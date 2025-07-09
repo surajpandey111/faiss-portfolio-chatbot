@@ -1,0 +1,6 @@
+flask
+flask-cors
+faiss-cpu
+scikit-learn
+python-dotenv
+google-generativeai
