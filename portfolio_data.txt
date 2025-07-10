@@ -55,7 +55,7 @@ I am Suraj Kumar Pandey, a polymathic AI/ML Engineer and Full-Stack Developer wi
 - **Mineral Targeting 2025**
   - AI-based mineral exploration with seven ensemble ML models (STGNN, CNN, QIENN, Linear Regression, Tuned XGBoost, Stacking Ensemble, Weighted Ensemble).
   - Best Model: Tuned Stacking Ensemble (MSE: 7.8744), identified 501 high-potential zones.
-  - Built for IndiaAI Hackathon.
+  - Built for IndiaAI Hackathon GOI Project.
   - Links: [YouTube](https://youtu.be/AAd4PiICbAI) | [Flask Demo](https://mineral-targeting-2025.onrender.com/) | [React Demo](https://mineral-targeting-static.onrender.com/) | [GitHub](https://github.com/surajpandey111/mineral-targeting-2025)
 - **SHL Recommendation Engine**
   - RAG architecture with LangChain + Gemini API for personalized SHL assessment recommendations.
@@ -65,16 +65,16 @@ I am Suraj Kumar Pandey, a polymathic AI/ML Engineer and Full-Stack Developer wi
   - Link: [Try it](https://gyanmaipdf-to-excel-super-smart.streamlit.app/)
 - **Alexander AI Assistant**
   - Django-based voice assistant for coding help, real-time queries, and task automation.
-  - Links: [YouTube](https://youtu.be/HCchAhpkELo) | [YouTube](https://youtu.be/2Tj5H82E7n8) | [GitHub](https://github.com/suraipandey111/alaxander-ai-voice-assiatsimt/tree/master)
+  - Links: [YouTube](https://youtu.be/uVVOiayzgd0)|[YouTube](https://youtu.be/HCcHAhpkELo)|[YouTube](https://youtu.be/_P1VxD1cGHs) | [GitHub](https://github.com/suraipandey111/alaxander-ai-voice-assiatsimt/tree/master)
 - **Real-Time Object Detection**
   - YOLOv3 + OpenCV with non-max suppression for webcam detection.
-  - Link: [YouTube](https://youtu.be/iovlhRblovk)
+  - Link: [YouTube](https://youtu.be/L2bCl2OS-EU)
 - **Natural Disaster Predictor**
   - Tkinter GUI with Random Forest and live weather/geolocation APIs for earthquake forecasting.
-  - Link: [YouTube](https://youtu.be/_qnomzwuHgg)
+  - Link: [YouTube](https://youtu.be/_gpomZwuHgg)
 - **Diabetes Prediction System**
   - Tkinter GUI with Random Forest for diabetes risk classification.
-  - Link: [YouTube](https://youtu.be/F12Mptzyw7o)
+  - Link: [YouTube](https://youtu.be/fMnnX1Pz4bc)
 - **College Library Website**
   - Static HTML/CSS website for college use.
 - **IT Department Workshop Website**
