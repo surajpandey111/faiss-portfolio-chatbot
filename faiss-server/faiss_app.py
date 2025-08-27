@@ -38,7 +38,7 @@ def search():
 
     prompt = f"Answer the question from this context:\n{context}\n\nQ: {q}"
 
-    model = genai.GenerativeModel("gemini-2.0-flash")
+    model = genai.GenerativeModel("gemini-2.5-flash")
     answer = model.generate_content(prompt)
 
     return jsonify({"answer": answer.text})
