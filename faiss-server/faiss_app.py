@@ -3,45 +3,73 @@ from flask_cors import CORS
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 import google.generativeai as genai
-from dotenv import load_dotenv
 import numpy as np
 import os
 
-load_dotenv()
+app = Flask(__name__)
+CORS(app, resources={r"/*": {"origins": "*"}})
+
+# -----------------------------
+# SAFE ENV LOADING
+# -----------------------------
 api_key = os.getenv("GEMINI_API_KEY")
-if not api_key:
-    raise Exception("❌ GEMINI_API_KEY is missing in .env")
 
-genai.configure(api_key=api_key)
+if api_key:
+    genai.configure(api_key=api_key)
+else:
+    print("⚠️ GEMINI_API_KEY not found. Gemini responses will fail.")
 
-# Load data
-with open("portfolio_data.txt") as f:
-    docs = [line.strip() for line in f if line.strip()]
+# -----------------------------
+# SAFE FILE LOADING (IMPORTANT FIX)
+# -----------------------------
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+file_path = os.path.join(BASE_DIR, "portfolio_data.txt")
+
+try:
+    with open(file_path, encoding="utf-8") as f:
+        docs = [line.strip() for line in f if line.strip()]
+except Exception as e:
+    print("❌ portfolio_data.txt loading failed:", e)
+    docs = ["Portfolio data not available."]
 
 vectorizer = TfidfVectorizer().fit(docs)
 doc_vectors = vectorizer.transform(docs)
 
-app = Flask(__name__)
-CORS(app)
-
+# -----------------------------
+# ROUTES
+# -----------------------------
 @app.route("/")
 def home():
-    return "✅ TFIDF+Gemini server running. POST to /search"
+    return "✅ Backend running. POST to /search"
 
 @app.route("/search", methods=["POST"])
 def search():
-    q = request.json.get("question")
-    q_vec = vectorizer.transform([q])
-    sims = cosine_similarity(q_vec, doc_vectors).flatten()
-    top_idx = np.argsort(sims)[-4:][::-1]
-    context = "\n".join([docs[i] for i in top_idx])
+    try:
+        data = request.get_json()
+        if not data or "question" not in data:
+            return jsonify({"answer": "Invalid request"}), 400
 
-    prompt = f"Answer the question from this context:\n{context}\n\nQ: {q}"
+        question = data["question"]
 
-    model = genai.GenerativeModel("gemini-2.5-flash-lite")
-    answer = model.generate_content(prompt)
+        q_vec = vectorizer.transform([question])
+        sims = cosine_similarity(q_vec, doc_vectors).flatten()
+        top_idx = np.argsort(sims)[-4:][::-1]
+        context = "\n".join([docs[i] for i in top_idx])
 
-    return jsonify({"answer": answer.text})
+        prompt = f"Answer professionally using this context:\n{context}\n\nQ: {question}"
+
+        if not api_key:
+            return jsonify({"answer": "API key missing on server."})
+
+        model = genai.GenerativeModel("gemini-2.5-flash-lite")
+        response = model.generate_content(prompt)
+
+        return jsonify({"answer": response.text})
+
+    except Exception as e:
+        print("❌ ERROR in /search:", str(e))
+        return jsonify({"answer": "Server error occurred."}), 500
+
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=int(os.environ.get("PORT", 8000)))
