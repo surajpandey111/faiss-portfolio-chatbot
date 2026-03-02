@@ -61,7 +61,7 @@ def search():
         if not api_key:
             return jsonify({"answer": "API key missing on server."})
 
-        model = genai.GenerativeModel("gemini-2.5-flash-lite")
+        model = genai.GenerativeModel("gemini-2.0-flash")
         response = model.generate_content(prompt)
 
         return jsonify({"answer": response.text})
@@ -73,3 +73,4 @@ def search():
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=int(os.environ.get("PORT", 8000)))
+
