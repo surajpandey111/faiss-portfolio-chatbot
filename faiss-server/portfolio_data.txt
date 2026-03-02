@@ -1,7 +1,8 @@
 Suraj Kumar Pandey, AI/ML Engineer and Full-Stack Developer
 Founder and CEO/CTO of Gyanm: The DeepAI, India’s AI productivity platform
 Founder and CEO/CTO of SurajTechLabs, India’s First AI Saas Development platform/Services at https://suraj-portfolio.tech/
-Gyanm AI platform for text, code, and image generation at https://researchai-gpt.onrender.com/
+Gyanm AI platform(india ai imapct summit pre event) for text, code, and image generation at https://researchai-gpt.onrender.com/
+AI-Hub Multi Domain platform for text, code, and image generation at https://ai-hub-multidomain.onrender.com/
 B.Tech in Information Technology, Government Engineering College, Azamgarh, 2022-Present, CGPA 7.5
 BS in Data Science and Applications, IIT Madras, 2022-Present
 JEE Main 2022, Percentile 90.89, JEE Advanced Qualified
